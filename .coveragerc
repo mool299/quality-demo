@@ -1,0 +1,15 @@
+[run]
+source = src
+omit = 
+    tests/*
+    */__pycache__/*
+    *.pyc
+
+[report]
+exclude_lines =
+    if __name__ == .__main__.:
+    pragma: no cover
+    raise NotImplementedError
+    pass
+
+fail_under = 70
